@@ -1,0 +1,15 @@
+var
+id x
+:=
+num 666
++
+id counter
+*
+num 42
+*
+(
+num 666
+)
+-
+num 255
+;
