@@ -1,0 +1,3 @@
+function ()
+	return 0x1234^;
+end;
