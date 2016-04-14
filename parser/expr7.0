@@ -1,0 +1,9 @@
+function ()
+	return (1 = 2) or 4 or (not (123^)) or func() or baa() or var1;
+	return (1 = 2) + 4 + (not (123^));
+	return (1 < 2) + 4 + (not (123^)) + baa;
+	return 2;
+	return foo((1=2) + 3);
+	return foo(1,2,3,4);
+	return foo(1,2,3,4,);
+end;
