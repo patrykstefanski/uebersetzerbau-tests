@@ -1,5 +1,5 @@
 #!/bin/bash
-for file in *.[0-2]
+for file in $(dirname $0)/../parser/*.[0-2]
 do
   if [ -f "$1" ]
   then
