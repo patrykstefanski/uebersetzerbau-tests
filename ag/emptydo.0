@@ -1,0 +1,7 @@
+// Tests an empty do statement.
+
+main()
+    emptydo:
+        do end;
+    return 0;
+end;

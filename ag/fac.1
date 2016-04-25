@@ -1,0 +1,21 @@
+// This test file checks a simple program (faculty of n),
+// but the programmer forgot the second backslash of the 
+// comment in the main-method.
+
+fac(n)
+	var _n := 1;
+	do
+		2 < n -> _n := n * fac(n+(-1));
+		         break;
+	end;
+	return _n;
+end;
+
+main()
+	var fac_5 := fac(0x05); / this is 120.
+	return 0;
+end;
+
+
+
+

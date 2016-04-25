@@ -1,0 +1,10 @@
+// Tests the arithmetic elements
+
+add(a,b,c)
+    return a + a + (b + b) + c;
+end;
+
+main()
+    var x := 3 * add(1,2,3);
+    return 0;
+end;

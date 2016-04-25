@@ -1,0 +1,29 @@
+// Tests the arithmetic elements.
+
+div(b,a,c,d,e,f,g)
+    var r := 0;
+    var s := 1;
+    s := s;
+    do a < 0 -> a := (-1) * a;
+                f := (-1) * s;
+                break;
+    end;
+    do
+       b < 0 -> b := (-1) * b;
+                s := (-1) * s;
+                break;
+    end;
+    loop:
+        do a = b -> r := r + 1;
+                    break;
+           a < b -> r := r + 1;
+                    b := b + (-a);
+                    continue loop;
+    end;
+    return s * r;
+end;
+
+main()
+    var x := 3 * div(4,2);
+    return 0;
+end;

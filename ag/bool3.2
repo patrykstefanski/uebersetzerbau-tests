@@ -1,0 +1,12 @@
+// Tests the boolean elements.
+
+error()
+    do
+        0x02 < 4 or 0x02 < 0x01 -> var x := 1 + 1;
+                                   break;
+    end;
+end;
+
+main()
+    return error();
+end;

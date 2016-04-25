@@ -1,0 +1,3 @@
+function (fuu, baa)
+	return not ( fuu * baa);
+end;
