@@ -1,0 +1,14 @@
+// Tests the boolean elements.
+
+between(a,b,c)
+    var result := 1;
+    do 
+        not ((b < a) or (c < b)) -> result := 0;
+                                    break;
+    end;
+    return result;
+end;
+
+main()
+    return between(0,1,2);
+end;

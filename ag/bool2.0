@@ -1,0 +1,15 @@
+// Tests the boolean elements.
+
+tauto(a,b)
+    var result := 1;    
+    do
+        (not ((a = b) or (a < b))) or (b < a) -> result := 0;
+                                                 break;
+    end;
+    return result;
+end;
+
+
+main()
+    return tauto(1,2);
+end;

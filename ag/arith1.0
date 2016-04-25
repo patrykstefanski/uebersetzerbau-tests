@@ -1,0 +1,12 @@
+// Tests the arithmetic elements
+
+arith(a,b,c)
+    var x := (a * b) + c;
+    var y := a + b + c;
+    return x * y;
+end;
+
+main()
+    var x := 2 * arith(0x1, 0x2, 0x3);
+    return 0;
+end;    

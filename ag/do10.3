@@ -1,0 +1,12 @@
+// B is outside the scope.
+
+main(x,y)
+    A: do 
+        x < y -> var a := x * y;
+                 B: do
+                    a < x -> y := a + (-y);
+                             continue A;
+                 end;  
+                 break B;
+    end;
+end;
