@@ -1,0 +1,11 @@
+Tests für die codea abgabe.
+
+Zum ausführen der Tests ./testAll.sh in diesem Ordner ausführen.
+
+Eingaben für die Tests liegen unter cases/
+Die erzeugten Dateien liegen dann in output/
+
+Das testscript erzeugt (wenn kein Fehler auftritt) für jeden test
+eine executable sowie das assembler listing und speichert diese
+unter output/<inputname>[.s]
+
