@@ -1,0 +1,5 @@
+// Tests the arithmetic elements
+
+test()
+    return 2*8;
+end;    
