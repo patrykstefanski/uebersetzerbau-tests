@@ -1,0 +1,5 @@
+//Parameters are 1,2,3 and pointer to 4
+
+test(a,b,c,d)
+    return b * (c + (-a)) * (d^); // 2 * (3-1) * ptr(4) = 16
+end;

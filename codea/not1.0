@@ -1,0 +1,4 @@
+
+test()
+    return not not 16;
+end;
