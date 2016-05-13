@@ -1,0 +1,5 @@
+// movq $9, %rax; ret ?
+
+constfold()
+    return 1 + (2 * (- (3 < 4))) + (6 or (not (7 = 7)));
+end;

@@ -1,0 +1,2 @@
+extern long test(long);
+RET(test(666) == 666);

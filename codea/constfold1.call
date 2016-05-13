@@ -1,0 +1,2 @@
+extern long constfold(void);
+RET(constfold() == 9);

@@ -1,0 +1,11 @@
+// Checks whether you use signed less (JL) instead of unsigned (JB)
+
+extern long less(long, long);
+RET(less(666, 1337) == -1 &&
+    less(1337, 666) == 0 &&
+    less(666, 666) == 0 &&
+    less(-1337, 666) == -1 &&
+    less(-1337, -666) == -1 &&
+    less(666, -1337) == 0 &&
+    less(-666, -1337) == 0 &&
+    less(-666, -666) == 0);

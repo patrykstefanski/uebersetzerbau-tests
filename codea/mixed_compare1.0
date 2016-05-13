@@ -1,0 +1,5 @@
+// Returns always -1
+
+test(a, b)
+    return (a < b) + (b < a) + (a = b);
+end;

@@ -1,0 +1,6 @@
+extern long neg(long);
+RET(neg(0) == 0 &&
+    neg(666) == -666 &&
+    neg(-1337) == 1337 &&
+    neg(-0x7fffffffffffffff) == 0x7fffffffffffffff &&
+    neg(-0x7fffffffffffffff - 1) == -0x7fffffffffffffff - 1);

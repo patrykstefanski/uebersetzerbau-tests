@@ -1,0 +1,3 @@
+extern long equal(long, long);
+RET(equal(666, 666) == -1 &&
+    equal(666, 1337) == 0);

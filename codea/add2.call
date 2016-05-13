@@ -1,0 +1,6 @@
+extern long add(long, long);
+RET(add(0, 0) == 0 &&
+    add(666, 671) == 1337 &&
+    add(-666, -671) == -1337 &&
+    add(0xffffffff, 0xffffffff) == 0x1fffffffe &&
+    add(-0x7fffffffffffffff - 1, -0x7fffffffffffffff - 1) == 0);

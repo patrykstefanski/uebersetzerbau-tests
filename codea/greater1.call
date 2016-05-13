@@ -1,0 +1,11 @@
+// See less4.0 file for signed checks
+
+extern long greater(long, long);
+RET(greater(1337, 666) == -1 &&
+    greater(666, 1337) == 0 &&
+    greater(666, 666) == 0 &&
+    greater(-1337, 666) == 0 &&
+    greater(-1337, -666) == 0 &&
+    greater(666, -1337) == -1 &&
+    greater(-666, -1337) == -1 &&
+    greater(-666, -666) == 0);
