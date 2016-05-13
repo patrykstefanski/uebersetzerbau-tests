@@ -1,0 +1,7 @@
+func1(a, b, c)
+    return (a + b) * c;
+end;
+
+func2(a, b, c)
+    return (a * c) + (b * c);
+end;
