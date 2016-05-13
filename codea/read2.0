@@ -1,0 +1,5 @@
+// Calculates array[0] + array[1] + array[2]
+// Note that sizeof(long) = 8, therefore array[i] <=> *(long *)((void *)array + i * 8)
+test(array)
+    return (array^) + ((array + 8)^) + ((array + 16)^);
+end;

@@ -1,0 +1,3 @@
+extern long test(long *);
+long a = 10;
+RET(test(&a) == 10);
