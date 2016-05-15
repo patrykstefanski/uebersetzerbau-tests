@@ -1,0 +1,5 @@
+// There is no instruction 'or reg, imm64'.
+
+bigor(a)
+    return (1000000000 * 1000000000) or a;
+end;

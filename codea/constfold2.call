@@ -1,0 +1,2 @@
+extern long bigadd(long);
+RET(bigadd(666) == 1000000000000000666);

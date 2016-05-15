@@ -1,0 +1,2 @@
+extern long bigeq(long);
+RET(bigeq(1000000000000000000) == -1);

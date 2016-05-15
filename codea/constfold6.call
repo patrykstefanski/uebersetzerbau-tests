@@ -1,0 +1,2 @@
+extern long biglt(long);
+RET(biglt(2000000000000000000) == -1);

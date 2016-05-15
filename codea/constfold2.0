@@ -1,0 +1,5 @@
+// There is no instruction 'add reg, imm64'.
+
+bigadd(a)
+    return (1000000000 * 1000000000) + a;
+end;

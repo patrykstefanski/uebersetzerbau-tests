@@ -1,0 +1,2 @@
+extern long bigor(long);
+RET(bigor(666) == 1000000000000000666);

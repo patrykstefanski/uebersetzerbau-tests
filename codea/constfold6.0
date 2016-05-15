@@ -1,0 +1,5 @@
+// There is no instruction 'cmp reg, imm64'.
+
+biglt(a)
+    return (1000000000 * 1000000000) < a;
+end;
