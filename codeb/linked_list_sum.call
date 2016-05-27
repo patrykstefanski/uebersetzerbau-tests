@@ -1,0 +1,7 @@
+struct node { struct node *next; long value; };
+extern long linked_list_sum(struct node *);
+struct node n4 = { NULL, 4 };
+struct node n3 = { &n4, 3 };
+struct node n2 = { &n3, 2 };
+struct node n1 = { &n2, 1 };
+RET(linked_list_sum(&n1) == 10);

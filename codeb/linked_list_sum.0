@@ -1,0 +1,10 @@
+linked_list_sum(list)
+    var sum := 0;
+    do
+        not (list = 0) ->
+            sum := sum + ((list + 8)^);
+            list := list^;
+            continue;
+    end;
+    return sum;
+end;

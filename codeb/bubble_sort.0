@@ -1,0 +1,22 @@
+bubble_sort(array, n)
+    var swapped := -1;
+    do
+        swapped ->
+            swapped := 0;
+            var i := 1;
+            do
+                i < n ->
+                    do
+                        ((array + (i * 8))^) < ((array + ((i + (-1)) * 8))^) ->
+                            var tmp := (array + (i * 8))^;
+                            (array + (i * 8))^ := (array + ((i + (-1)) * 8))^;
+                            (array + ((i + (-1)) * 8))^ := tmp;
+                            swapped := -1;
+                            break;
+                    end;
+                    i := i + 1;
+                    continue;
+            end;
+            continue;
+    end;
+end;
