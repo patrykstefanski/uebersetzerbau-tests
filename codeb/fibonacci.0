@@ -1,0 +1,13 @@
+fibonacci(n)
+    var a := 1;
+    var b := 0;
+    do
+        0 < n ->
+            n := n + (-1);
+            var tmp := a;
+            a := a + b;
+            b := tmp;
+            continue;
+    end;
+    return b;
+end;

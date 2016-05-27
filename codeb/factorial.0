@@ -1,0 +1,10 @@
+factorial(n)
+    var product := 1;
+    do
+        0 < n ->
+            product := product * n;
+            n := n + (-1);
+            continue;
+    end;
+    return product;
+end;

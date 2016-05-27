@@ -1,0 +1,22 @@
+array_min(array, n)
+    var pos := -1;
+    var min := 666;
+    var i := 0;
+    do
+        i < n ->
+            var elem := (array + (i * 8))^;
+            do
+                pos ->
+                    pos := 0;
+                    min := elem;
+                    break;
+                elem < min ->
+                    pos := i;
+                    min := elem;
+                    break;
+            end;
+            i := i + 1;
+            continue;
+    end;
+    return pos;
+end;

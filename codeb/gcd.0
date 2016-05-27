@@ -1,0 +1,15 @@
+gcd(a, b)
+    do
+        not (a = b) ->
+            do
+                b < a ->
+                    a := a + (-b);
+                    break;
+                -1 ->
+                    b := b + (-a);
+                    break;
+            end;
+            continue;
+    end;
+    return a;
+end;

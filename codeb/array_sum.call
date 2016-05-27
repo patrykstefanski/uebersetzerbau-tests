@@ -1,0 +1,3 @@
+extern long array_sum(long *, long);
+long array[] = { 1, 2, 4, 8, 16 };
+RET(array_sum(array, sizeof(array)/sizeof(*array)) == 31);

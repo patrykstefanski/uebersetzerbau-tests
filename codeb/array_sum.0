@@ -1,0 +1,12 @@
+array_sum(array, n)
+    var i := 0;
+    var sum := 0;
+    do
+        i < n ->
+            var elem := (array + (i * 8))^;
+            sum := sum + elem;
+            i := i + 1;
+            continue;
+    end;
+    return sum;
+end;

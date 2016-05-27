@@ -1,0 +1,3 @@
+extern long array_min(long *, long);
+long array[] = { 10, 20, 30, 5, 20, 30, 7 };
+RET(array_min(array, sizeof(array)/sizeof(*array)) == 3);
