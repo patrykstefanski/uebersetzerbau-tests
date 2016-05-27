@@ -1,0 +1,5 @@
+// Eine Term-Anweisung wertet den Term aus macht mit dem Ergebnis nichts.
+test(a, b, c)
+    (666 * (a + b) * c);
+    return -1;
+end;

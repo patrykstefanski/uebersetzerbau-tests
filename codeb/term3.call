@@ -1,0 +1,2 @@
+extern long test(long, long, long);
+RET(test(1, 2, 3) == -1);
