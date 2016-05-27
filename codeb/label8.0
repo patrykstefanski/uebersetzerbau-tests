@@ -1,0 +1,21 @@
+test()
+    var ret := 0;
+    label: do
+        -1 ->
+            ret := 0;
+            break label;
+    end;
+    // the same name
+    label: do
+        -1 ->
+            ret := -1;
+            break label;
+    end;
+    // the same name
+    label: do
+        0 ->
+            ret := 0;
+            break label;
+    end;
+    return ret;
+end;

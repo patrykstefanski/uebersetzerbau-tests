@@ -1,0 +1,9 @@
+test()
+    var ret := 0;
+    label: do
+        -1 ->
+            ret := -1;
+            break label;
+    end;
+    return ret;
+end;

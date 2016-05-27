@@ -1,0 +1,9 @@
+test()
+    var i := 0;
+    label: do
+        i < 10 ->
+            i := i + 1;
+            continue; // same as 'continue label'
+    end;
+    return i;
+end;

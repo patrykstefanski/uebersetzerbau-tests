@@ -1,0 +1,15 @@
+test()
+    var ret := 0;
+    outer: do
+        -1 ->
+            inner: do
+                -1 ->
+                    ret := -1;
+                    break outer;
+            end;
+            // Deadcode
+            ret := 0;
+            break;
+    end;
+    return ret;
+end;
