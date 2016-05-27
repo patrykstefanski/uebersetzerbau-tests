@@ -1,0 +1,4 @@
+test(a, b)
+    var c := (a + b) * (a + b);
+    return c;
+end;

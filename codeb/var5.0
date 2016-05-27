@@ -1,0 +1,6 @@
+test(a, b)
+    var sum := a + b;
+    a := a * b;
+    var sum2 := a + b;
+    return sum = sum2;
+end;

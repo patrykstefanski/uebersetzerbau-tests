@@ -1,0 +1,6 @@
+test(a, b, )
+    var t1 := a + b;
+    a := t1 + a;
+    t1 := 2 * a;
+    return t1;
+end;
