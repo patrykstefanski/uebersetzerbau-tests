@@ -1,0 +1,5 @@
+extern void test(long **);
+long value;
+long *p = &value;
+test(&p);
+RET(value == 666);

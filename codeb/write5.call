@@ -1,0 +1,3 @@
+extern long test(long *);
+long value = 10;
+RET(test(&value) == 676 && value == 666);

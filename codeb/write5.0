@@ -1,0 +1,6 @@
+// Read after write.
+test(p)
+    var t := p^;
+    p^ := 666;
+    return t + (p^);
+end;

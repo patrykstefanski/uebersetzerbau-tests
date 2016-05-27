@@ -1,0 +1,7 @@
+test(vector)
+    vector^ := 1;
+    vector := vector + 8;
+    vector^ := 2;
+    vector := vector + 8;
+    vector^ := 3;
+end;

@@ -1,0 +1,5 @@
+test(vector)
+    vector^ := 1;
+    (vector + 8)^ := 2;
+    (vector + 16)^ := 3;
+end;

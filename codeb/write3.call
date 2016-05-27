@@ -1,0 +1,6 @@
+extern void test(long vector[3]);
+long vector[3];
+test(vector);
+RET(vector[0] == 1 &&
+    vector[1] == 2 &&
+    vector[2] == 3);
