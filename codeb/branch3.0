@@ -1,0 +1,9 @@
+test()
+    var ret := -1;
+    do
+        0 ->
+            ret := 0;
+            break;
+    end;
+    return ret;
+end;

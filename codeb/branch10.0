@@ -1,0 +1,19 @@
+test(m, n)
+    var counter := 0;
+    var i := 0;
+    do
+        i < m ->
+            var j := 0;
+            do
+                not (j < n) ->
+                    break;
+                -1 ->
+                    counter := counter + 1;
+                    j := j + 1;
+                    continue;
+            end;
+            i := i + 1;
+            continue;
+    end;
+    return counter;
+end;

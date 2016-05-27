@@ -1,0 +1,9 @@
+test(a)
+    var taken := 0;
+    do
+        a ->
+            taken := -1;
+            break;
+    end;
+    return taken;
+end;

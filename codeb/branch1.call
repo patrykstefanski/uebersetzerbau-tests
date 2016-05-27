@@ -1,0 +1,6 @@
+extern long test(long);
+RET(test(0) == 0 &&
+    test(1) == 0 &&
+    test(666) == 0 &&
+    test(-1) == -1 &&
+    test(-666) == -1);

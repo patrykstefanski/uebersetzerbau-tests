@@ -1,0 +1,17 @@
+test()
+    var counter := 0;
+    var i := 0;
+    do
+        i < 3 ->
+            var j := 0;
+            do
+                j < 4 ->
+                    counter := counter + 1;
+                    j := j + 1;
+                    continue;
+            end;
+            i := i + 1;
+            continue;
+    end;
+    return counter;
+end;
