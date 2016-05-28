@@ -1,0 +1,17 @@
+fibonacci_(n, prev_1, prev_2)
+    do
+        1 < n ->
+            return fibonacci_(n + (-1), prev_1 + prev_2, prev_1);
+            break;
+    end;
+    return prev_1;
+end;
+
+fibonacci(n)
+    do
+        n = 0 ->
+            return 0;
+            break;
+    end;
+    return fibonacci_(n, 1, 0);
+end;

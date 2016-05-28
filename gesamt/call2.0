@@ -1,0 +1,7 @@
+f(a, b)
+    return (a * a) + b;
+end;
+
+test()
+    return f(3, 4);
+end;

@@ -1,0 +1,8 @@
+factorial(n)
+    do
+        0 < n ->
+            return n * factorial(n + (-1));
+            break;
+    end;
+    return 1;
+end;

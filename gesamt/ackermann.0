@@ -1,0 +1,13 @@
+ackermann(m, n)
+    do
+        0 < m ->
+            do
+                0 < n ->
+                    return ackermann(m + (-1), ackermann(m, n + (-1)));
+                    break;
+            end;
+            return ackermann(m + (-1), 1);
+            break;
+    end;
+    return n + 1;
+end;

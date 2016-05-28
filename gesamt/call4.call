@@ -1,0 +1,4 @@
+extern long test(long, long);
+RET(test(0, 0) == 0 &&
+    test(3, 4) == 26 &&
+    test(7, 2) == 102);

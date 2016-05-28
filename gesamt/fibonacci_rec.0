@@ -1,0 +1,8 @@
+fibonacci(n)
+    do
+        n < 2 ->
+            return n;
+        break;
+    end;
+    return fibonacci(n + (-1)) + fibonacci(n + (-2));
+end;

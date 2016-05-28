@@ -1,0 +1,4 @@
+extern long ackermann(long, long);
+RET(ackermann(0, 665) == 666 &&
+    ackermann(1, 0) == 2 &&
+    ackermann(1, 2) == 4);
