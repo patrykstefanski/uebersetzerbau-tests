@@ -1,0 +1,8 @@
+f(ptr, val)
+    ptr^ := val;
+    return val;
+end;
+
+test(ptr)
+    return f(ptr, 666) * 1; // f(ptr, 666)
+end;

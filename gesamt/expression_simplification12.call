@@ -1,0 +1,4 @@
+extern long test(long *);
+long value = 0;
+RET(test(&value) == 0 &&
+    value == 666);
