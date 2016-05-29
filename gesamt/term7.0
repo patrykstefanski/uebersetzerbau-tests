@@ -1,0 +1,7 @@
+inc(ptr)
+    ptr^ := (ptr^) + 1;
+end;
+
+test(ptr)
+    (inc(ptr) + inc(ptr) + 666 + (not (inc(ptr) * inc(ptr))) + inc(ptr));
+end;

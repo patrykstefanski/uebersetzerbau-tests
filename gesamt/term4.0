@@ -1,0 +1,7 @@
+set(ptr, val)
+    ptr^ := val;
+end;
+
+test(ptr)
+    set(ptr, 666);
+end;

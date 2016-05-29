@@ -1,0 +1,44 @@
+// Hardcore test for register allocation.
+
+get(array, i)
+    return (array + (i * 8))^;
+end;
+
+set(array, i, val)
+    (array + (i * 8))^ := val;
+end;
+
+swap(array, i, j)
+    var tmp := get(array, i);
+    set(array, i, get(array, j));
+    set(array, j, tmp);
+end;
+
+partition(array, low, high)
+    var pivot := get(array, high);
+    var i := low + (-1);
+    var j := low;
+    do
+        j < high ->
+            do
+                get(array, j) < pivot ->
+                    i := i + 1;
+                    swap(array, i, j);
+                    break;
+            end;
+            j := j + 1;
+            continue;
+    end;
+    swap(array, i + 1, high);
+    return i + 1;
+end;
+
+quicksort(array, low, high)
+    do
+        low < high ->
+            var mid := partition(array, low, high);
+            quicksort(array, low, mid + (-1));
+            quicksort(array, mid + 1, high);
+            break;
+    end;
+end;

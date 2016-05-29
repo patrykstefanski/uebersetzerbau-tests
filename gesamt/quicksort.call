@@ -1,0 +1,28 @@
+extern void quicksort(long *, long, long);
+
+long array1[] = { 5, 4, 3, 2, 1 };
+quicksort(array1, 0, sizeof(array1)/sizeof(*array1) - 1);
+
+long array2[] = { 1, 2, 3, 4, 5 };
+quicksort(array2, 0, sizeof(array2)/sizeof(*array2) - 1);
+
+long array3[] = { 2, 3, 1, 1, 2 };
+quicksort(array3, 0, sizeof(array3)/sizeof(*array3) - 1);
+
+RET(array1[0] == 1 &&
+    array1[1] == 2 &&
+    array1[2] == 3 &&
+    array1[3] == 4 &&
+    array1[4] == 5 &&
+
+    array2[0] == 1 &&
+    array2[1] == 2 &&
+    array2[2] == 3 &&
+    array2[3] == 4 &&
+    array2[4] == 5 &&
+
+    array3[0] == 1 &&
+    array3[1] == 1 &&
+    array3[2] == 2 &&
+    array3[3] == 2 &&
+    array3[4] == 3);

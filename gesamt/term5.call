@@ -1,0 +1,4 @@
+extern void test(long *);
+long val;
+test(&val);
+RET(val == 3);
