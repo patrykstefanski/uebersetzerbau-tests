@@ -1,5 +1,3 @@
-// Bonus test
-
 bubble_sort(array, n)
     var swapped := -1;
     do
