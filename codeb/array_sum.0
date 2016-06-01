@@ -1,3 +1,5 @@
+// Bonus test
+
 array_sum(array, n)
     var i := 0;
     var sum := 0;

@@ -1,3 +1,5 @@
+// Bonus test
+
 array_min(array, n)
     var pos := -1;
     var min := 666;
